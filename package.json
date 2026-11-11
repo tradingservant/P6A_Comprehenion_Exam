@@ -1,0 +1,11 @@
+{
+  "name": "p6a-comprehenion-exam",
+  "private": true,
+  "description": "Static two-station Primary 6 reading-comprehension practice.",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 tests/pack.test.js tests/browser.test.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.15.0"
+  }
+}

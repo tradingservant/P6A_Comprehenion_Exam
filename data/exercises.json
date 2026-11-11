@@ -1,0 +1,829 @@
+{
+  "pack_id": "P6A_Comprehenion_Exam",
+  "title": "P6A Reading Comprehension Practice",
+  "title_zh": "小六閱讀理解練習（兩組）",
+  "spelling": "British",
+  "student_direction_language": "zh-Hant",
+  "item_language": "en",
+  "scoring": {
+    "storage": "in-memory only",
+    "login": false,
+    "attempt_rule": "On the first wrong attempt, show the first-error hint and allow at least one retry. Record first_correct if the first submission is fully correct; record hinted_success if the item becomes fully correct only after a hint. A later wrong retry is marked incorrect after the explanatory feedback is shown.",
+    "heading_match_scheme": "S1-H01 is one scored item covering Boxes A–E. All five headings must be correct for the item to score. A first-error hint names or describes the first incorrect box only and does not list the full key.",
+    "multi_select_scheme": "Exact set of correct options only. A partially correct set is treated as wrong.",
+    "gap_marking": "Trim leading/trailing space and ignore letter case. Do not accept extra words or a different word from the passage unless listed under accepted. British spelling is required where the forms differ (e.g. practise is not used as a gap here).",
+    "pictures": "No item requires a picture to answer. Passages stay visible while the pupil answers."
+  },
+  "stations": [
+    {
+      "id": "set1",
+      "order": 1,
+      "title": "Set 1 — Leisure Centre Lifeguard",
+      "title_zh": "第一組：休閒中心救生員網頁",
+      "passage_id": "set1-passage",
+      "passage_always_visible": true,
+      "also_keep_visible": [
+        "heading_bank"
+      ],
+      "student_stem_en": "H. Maya is reading a webpage about jobs in the community. Read it.",
+      "student_stem_zh": "H. Maya 正在閱讀一個關於社區工作的網頁。請細心閱讀。",
+      "items": [
+        {
+          "id": "S1-H01",
+          "section": "H1",
+          "type": "heading_match",
+          "marks": 1,
+          "scoring": "all_or_nothing",
+          "direction_en": "Read the webpage again. Write the correct headings in the boxes.",
+          "direction_zh": "再讀一次網頁。把正確的小標題寫在空格內。",
+          "bank": [
+            "More information",
+            "Income & working hours",
+            "Job descriptions",
+            "Entry requirements",
+            "Skills & Qualities",
+            "Introduction"
+          ],
+          "bank_note": "Introduction is already placed in the webpage and should remain there. It stays in the bank so the paper matches the source layout; online, treat it as already used.",
+          "slots": [
+            {
+              "id": "A",
+              "line": 5,
+              "accepted": [
+                "Job descriptions"
+              ]
+            },
+            {
+              "id": "B",
+              "line": 11,
+              "accepted": [
+                "Skills & Qualities"
+              ]
+            },
+            {
+              "id": "C",
+              "line": 18,
+              "accepted": [
+                "Income & working hours"
+              ]
+            },
+            {
+              "id": "D",
+              "line": 21,
+              "accepted": [
+                "Entry requirements"
+              ]
+            },
+            {
+              "id": "E",
+              "line": 27,
+              "accepted": [
+                "More information"
+              ]
+            }
+          ],
+          "prefilled": [
+            {
+              "id": "Introduction",
+              "heading": "Introduction"
+            }
+          ],
+          "match_rule": "Exact heading from the bank, including &. Do not accept pupil-style rewrites such as 'skills + qualities' in the online auto-mark, but a later paper mark-scheme may treat an unambiguous handwritten equivalent as acceptable (see teacher-key.md).",
+          "hints": {
+            "first_error": "先檢查第一個不正確的空格。讀該段的第一句，想想這一段是在講職責、條件、薪酬工時、入職要求，還是更多資料。小標題必須用題目提供的詞語，不要自行改寫。"
+          },
+          "hint_by_first_wrong_slot": {
+            "A": "第 5 行空格後面的一段以 First, Then, Next, Finally 來說明救生員做甚麼。這是在描述工作內容。",
+            "B": "第 11 行空格後面是 To be a leisure centre lifeguard, you need to: 和一個清單。想想清單裏列出的是甚麼。",
+            "C": "第 18 行空格後面提到每月可賺多少錢，以及每天和每星期工作多久。",
+            "D": "第 21 行空格後面先說 The most important requirement，接着說明可以用甚麼途徑學習這份工作。",
+            "E": "第 27 行空格後面只有一個網站，並邀請有興趣的人去了解更多和觀看訪問。"
+          },
+          "feedback": {
+            "correct": "Five headings are in the right boxes. Introduction was already in place.",
+            "incorrect_after_retry": "Box A (line 5) is Job descriptions; Box B (line 11) is Skills & Qualities; Box C (line 18) is Income & working hours; Box D (line 21) is Entry requirements; Box E (line 27) is More information."
+          },
+          "explanation": "Each heading names the job of that section: a sequence of duties; a ‘you need to’ list of skills and qualities; pay and hours; how to become a lifeguard; and a website for further information."
+        },
+        {
+          "id": "S1-Q01",
+          "section": "H2",
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "Which word in the webpage means ‘right for a particular purpose’?",
+          "options": [
+            {
+              "id": "A",
+              "text": "suitable (line 3)"
+            },
+            {
+              "id": "B",
+              "text": "responsible (line 3)"
+            },
+            {
+              "id": "C",
+              "text": "alert (line 14)"
+            },
+            {
+              "id": "D",
+              "text": "safe (line 2)"
+            }
+          ],
+          "accepted": [
+            "A"
+          ],
+          "hints": {
+            "first_error": "看第 3 行：this job could be ______ for you。哪一個詞的意思最接近 ‘right for a particular purpose’？同一行還有另一個形容詞，但意思不同。"
+          },
+          "feedback": {
+            "correct": "Yes. In line 3, suitable means right for a particular purpose: the job could be a good / right choice for you.",
+            "incorrect_after_retry": "The answer is A, suitable (line 3). Responsible (also line 3) describes a serious job with important duties, not ‘right for a purpose’. Safe (line 2) means not in danger. Alert (line 14) means watchful."
+          },
+          "explanation": "Vocabulary in context with a same-line distractor (responsible, line 3) and nearby / later-line distractors (safe, line 2; alert, line 14)."
+        },
+        {
+          "id": "S1-Q02",
+          "section": "H2",
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "How many hours does a lifeguard work each week?",
+          "options": [
+            {
+              "id": "A",
+              "text": "8 hours"
+            },
+            {
+              "id": "B",
+              "text": "48 hours"
+            },
+            {
+              "id": "C",
+              "text": "56 hours"
+            },
+            {
+              "id": "D",
+              "text": "192 hours"
+            }
+          ],
+          "accepted": [
+            "B"
+          ],
+          "hints": {
+            "first_error": "閱讀第 19–20 行：lifeguards usually work about 8 hours a day, six days a week。題目問的是 each week，需要把兩個數字合起來算，不要只抄每天的時數。"
+          },
+          "feedback": {
+            "correct": "Yes. 8 hours a day × six days a week = 48 hours a week.",
+            "incorrect_after_retry": "The answer is B, 48 hours. Lines 19–20 say about 8 hours a day, six days a week. 8 × 6 = 48. A is only the hours in one day. C is 8 × 7, as if they worked every day of the week. D is 8 × 6 × 4, as if the question asked about four weeks."
+          },
+          "explanation": "Combination / calculation inference from two figures in the income and working hours section."
+        },
+        {
+          "id": "S1-Q03",
+          "section": "H2",
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "What can’t you read about in this webpage?",
+          "options": [
+            {
+              "id": "A",
+              "text": "what leisure centre lifeguards do"
+            },
+            {
+              "id": "B",
+              "text": "how to become a leisure centre lifeguard"
+            },
+            {
+              "id": "C",
+              "text": "what type of people can become leisure centre lifeguards"
+            },
+            {
+              "id": "D",
+              "text": "what a lifeguard’s uniform looks like"
+            }
+          ],
+          "accepted": [
+            "D"
+          ],
+          "hints": {
+            "first_error": "逐項對照網頁：哪些在「工作內容」「入職要求」或「技能與特質」已經出現？找出完全沒有提及的一項。"
+          },
+          "feedback": {
+            "correct": "Yes. The webpage never describes a lifeguard’s uniform.",
+            "incorrect_after_retry": "The answer is D. A is in the job descriptions (lines 6–10). B is in the entry requirements (lines 22–26). C is in the skills list and the opening lines (for example, a strong swimmer who can stay alert). The webpage does not mention a uniform."
+          },
+          "explanation": "Identify the option that is clearly absent from the webpage."
+        },
+        {
+          "id": "S1-Q04",
+          "section": "H2",
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "Which of the following is NOT true?",
+          "options": [
+            {
+              "id": "A",
+              "text": "Lifeguards help keep swimmers safe."
+            },
+            {
+              "id": "B",
+              "text": "Lifeguards check the pool before opening time."
+            },
+            {
+              "id": "C",
+              "text": "You must go to a sports college to learn how to be a lifeguard."
+            },
+            {
+              "id": "D",
+              "text": "You can learn about some lifeguards on the Internet."
+            }
+          ],
+          "accepted": [
+            "C"
+          ],
+          "hints": {
+            "first_error": "特別留意第 23–26 行怎樣說明學習途徑。Another option 表示這只是其中一個方法，並不是唯一或必須的方法。題目問的是哪一項 is NOT true。"
+          },
+          "feedback": {
+            "correct": "Yes. C is not true. A college course is only another option, not a must.",
+            "incorrect_after_retry": "The answer is C. Lines 23–25 say you can join a training programme at a swimming club and practise with an experienced lifeguard. A recognised lifesaving course at a sports college is another option, so you must not treat it as compulsory. A is true (lines 1–2). B is true (lines 6–7). D is true because the website in lines 28–30 has interviews with several lifeguards."
+          },
+          "explanation": "Negative comprehension with a ‘must’ trap: the text offers a college course as an option, not a requirement. The stem uses correct English (is NOT true)."
+        },
+        {
+          "id": "S1-Q05",
+          "section": "H2",
+          "type": "mcq_multi",
+          "marks": 1,
+          "direction_en": "You can choose more than one answer.",
+          "direction_zh": "選出最合適的答案。你可以選擇多於一個答案。",
+          "stem": "A good leisure centre lifeguard ______.",
+          "options": [
+            {
+              "id": "A",
+              "text": "must have his or her own swimming pool"
+            },
+            {
+              "id": "B",
+              "text": "must be a strong swimmer"
+            },
+            {
+              "id": "C",
+              "text": "must stay alert and be able to react quickly"
+            },
+            {
+              "id": "D",
+              "text": "must be talkative and outgoing"
+            }
+          ],
+          "accepted": [
+            "B",
+            "C"
+          ],
+          "accepted_set": [
+            "B",
+            "C"
+          ],
+          "marking": "Exact set only. Award the mark only if B and C are both selected and A and D are not.",
+          "hints": {
+            "first_error": "只選擇網頁真正支持的陳述，尤其是「Skills & Qualities」清單。如果某項條件從來沒有出現，即使聽起來合理，也不要選。必須選出全部正確選項，而且不能多選。"
+          },
+          "feedback": {
+            "correct": "Yes. The skills list says a lifeguard must be a strong and confident swimmer, stay alert, and be able to react quickly.",
+            "incorrect_after_retry": "The correct set is B and C only. Line 13 says you need to be a strong and confident swimmer. Lines 14 and 16 say you need to stay alert and be able to react quickly. A is not in the text (the job is at a public swimming pool / leisure centre). D is not stated: good communication and teamwork skills are not the same as being talkative and outgoing."
+          },
+          "explanation": "Multi-select with two unambiguous keys from the skills list. A and D are unsupported. No borderline ‘must’ was included."
+        },
+        {
+          "id": "S1-Q06a",
+          "section": "H3",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "S1-Q06",
+          "blank_number": 1,
+          "direction_en": "Finish the note below using words from the webpage. Use ONE word for each blank.",
+          "direction_zh": "利用網頁中的詞語完成下面的便條。每個空格只填一個單詞。",
+          "note_full": "My uncle has been a leisure centre lifeguard for a year. He works at a (1) ________. He blows a (2) ________ if anyone is breaking a safety rule. He doesn’t (3) ________ much money but he loves his job.",
+          "stem_context": "My uncle has been a leisure centre lifeguard for a year. He works at a (1) ________.",
+          "accepted": [
+            "pool"
+          ],
+          "acceptable_notes": "Case-insensitive. Exact word from the webpage. No extra words (e.g. do not accept 'swimming pool' in blank 1, because the instruction is one word and the printed article is already 'a').",
+          "hints": {
+            "first_error": "第 (1) 格前面是 at a，要填工作地點。查看「Income & working hours」一段怎樣稱呼這個地方。每個空格只填一個單詞。"
+          },
+          "feedback": {
+            "correct": "Yes. The webpage says lifeguards work in a public swimming pool.",
+            "incorrect_after_retry": "The word is pool (lines 19–20: In a public swimming pool…). Use one word from the webpage."
+          },
+          "explanation": "One-word gap in a short personal note; the three answers typify workplace (pool), an object from the duties (whistle), and the income verb (earn)."
+        },
+        {
+          "id": "S1-Q06b",
+          "section": "H3",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "S1-Q06",
+          "blank_number": 2,
+          "direction_en": "Finish the note below using words from the webpage. Use ONE word for each blank.",
+          "direction_zh": "利用網頁中的詞語完成下面的便條。每個空格只填一個單詞。",
+          "note_full": "My uncle has been a leisure centre lifeguard for a year. He works at a (1) ________. He blows a (2) ________ if anyone is breaking a safety rule. He doesn’t (3) ________ much money but he loves his job.",
+          "stem_context": "He blows a (2) ________ if anyone is breaking a safety rule.",
+          "accepted": [
+            "whistle"
+          ],
+          "acceptable_notes": "Case-insensitive. Exact word from the webpage. No extra words (e.g. do not accept 'swimming pool' in blank 1, because the instruction is one word and the printed article is already 'a').",
+          "hints": {
+            "first_error": "第 (2) 格在 blows a 後面。查看「Job descriptions」一段，救生員在有人違反安全規則時會怎樣做。"
+          },
+          "feedback": {
+            "correct": "Yes. Line 8 says the lifeguard blows a whistle.",
+            "incorrect_after_retry": "The word is whistle (lines 8–9)."
+          },
+          "explanation": "One-word gap in a short personal note; the three answers typify workplace (pool), an object from the duties (whistle), and the income verb (earn)."
+        },
+        {
+          "id": "S1-Q06c",
+          "section": "H3",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "S1-Q06",
+          "blank_number": 3,
+          "direction_en": "Finish the note below using words from the webpage. Use ONE word for each blank.",
+          "direction_zh": "利用網頁中的詞語完成下面的便條。每個空格只填一個單詞。",
+          "note_full": "My uncle has been a leisure centre lifeguard for a year. He works at a (1) ________. He blows a (2) ________ if anyone is breaking a safety rule. He doesn’t (3) ________ much money but he loves his job.",
+          "stem_context": "He doesn’t (3) ________ much money but he loves his job.",
+          "accepted": [
+            "earn"
+          ],
+          "acceptable_notes": "Case-insensitive. Exact word from the webpage. No extra words (e.g. do not accept 'swimming pool' in blank 1, because the instruction is one word and the printed article is already 'a').",
+          "hints": {
+            "first_error": "第 (3) 格在 doesn’t 後面，需要一個動詞。查看網頁哪一句談到金錢。"
+          },
+          "feedback": {
+            "correct": "Yes. The income sentence uses the verb earn.",
+            "incorrect_after_retry": "The word is earn (line 19: New lifeguards can earn around…)."
+          },
+          "explanation": "One-word gap in a short personal note; the three answers typify workplace (pool), an object from the duties (whistle), and the income verb (earn)."
+        }
+      ]
+    },
+    {
+      "id": "set2",
+      "order": 2,
+      "title": "Set 2 — Harbour Lights Job Fair",
+      "title_zh": "第二組：Harbour Lights 招聘會",
+      "passage_id": "set2-passage",
+      "passage_always_visible": true,
+      "also_keep_visible": [
+        "dictionary_box_S2-Q03"
+      ],
+      "student_stem_en": "I. Ryan is at a job fair with his mother. Read the job advertisements carefully, choose the best answers for Questions 1–5 and complete Question 6.",
+      "student_stem_zh": "I. Ryan 正與媽媽參加招聘會。請細心閱讀招聘廣告，選出第 1 至 5 題的最合適答案，並完成第 6 題。",
+      "items": [
+        {
+          "id": "S2-Q01",
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "To work at East Park Sports Centre, you need to be ______.",
+          "options": [
+            {
+              "id": "A",
+              "text": "hard-working"
+            },
+            {
+              "id": "B",
+              "text": "outgoing"
+            },
+            {
+              "id": "C",
+              "text": "strong"
+            },
+            {
+              "id": "D",
+              "text": "creative"
+            }
+          ],
+          "accepted": [
+            "D"
+          ],
+          "hints": {
+            "first_error": "只看 East Park Sports Centre 的廣告。廣告要求你為兒童遊戲想出甚麼？另外，There is no need to… 那一句可以排除一個常見的誤選。"
+          },
+          "feedback": {
+            "correct": "Yes. The games helper must come up with new ideas for children’s games, so you need to be creative.",
+            "incorrect_after_retry": "The answer is D, creative (lines 28–30). C is a trap: the ad says there is no need to carry heavy equipment, so you do not need to be strong. A and B are not mentioned in this advertisement."
+          },
+          "explanation": "Quality required at one workplace, with a ‘no need to…’ line ruling out strong."
+        },
+        {
+          "id": "S2-Q02",
+          "type": "mcq_combination",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "To be a storytime helper at Harbour Children’s Library, you need to ______.",
+          "statements": [
+            {
+              "id": 1,
+              "text": "know what young children like",
+              "supported_by": "lines 6–7: familiar with what children aged 4 to 8 like"
+            },
+            {
+              "id": 2,
+              "text": "be imaginative",
+              "supported_by": "lines 10–11: use imaginative voices and actions"
+            },
+            {
+              "id": 3,
+              "text": "be good at English",
+              "supported_by": "line 6: good at English"
+            },
+            {
+              "id": 4,
+              "text": "have your story ready before the session starts",
+              "supported_by": "lines 8–9: prepare a short story before the children arrive (storytime starts promptly at 10 a.m.)"
+            }
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "1 and 2 only"
+            },
+            {
+              "id": "B",
+              "text": "1, 2 and 4"
+            },
+            {
+              "id": "C",
+              "text": "1 and 3 only"
+            },
+            {
+              "id": "D",
+              "text": "All of the above"
+            }
+          ],
+          "accepted": [
+            "D"
+          ],
+          "hints": {
+            "first_error": "把 1 至 4 點逐項對照 Harbour Children’s Library 的廣告。不要只看直接出現的詞，也要看那兩句 bullet 是否公平地支持該陳述。然後才選擇組合。"
+          },
+          "feedback": {
+            "correct": "Yes. All four statements are fairly supported by the storytime advertisement, so the answer is all of the above.",
+            "incorrect_after_retry": "The answer is D. 1 is supported by ‘familiar with what children aged 4 to 8 like’. 2 is supported by ‘use imaginative voices and actions’. 3 is stated (‘good at English’). 4 is supported by ‘prepare a short story before the children arrive’ and ‘starts promptly at 10 a.m.’."
+          },
+          "explanation": "Combination item. Every statement in the accepted combination is fairly supported by the new ad. 4 is a fair reading of ‘prepare… before the children arrive’ and the prompt start time, not a guess from outside the text."
+        },
+        {
+          "id": "S2-Q03",
+          "type": "dictionary_sense",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。作答時請同時查看詞典義項框。",
+          "stem": "Under the advertisement for ‘Weekend Cycling Guide’, what does the word ‘train’ mean?",
+          "keep_visible": "dictionary_box_S2-Q03",
+          "target_word": "train",
+          "target_context": "We will train you in the first two weeks. (line 17)",
+          "glossary": [
+            {
+              "sense": 1,
+              "pos": "n",
+              "definition": "a railway engine and carriages that carry people or goods",
+              "example": "We took the early train to Sha Tin."
+            },
+            {
+              "sense": 2,
+              "pos": "n",
+              "definition": "a long line of people, animals or things moving together",
+              "example": "A train of camels crossed the desert."
+            },
+            {
+              "sense": 3,
+              "pos": "v",
+              "definition": "to teach a person or animal the skills for a job or activity",
+              "example": "The club will train new members every summer."
+            },
+            {
+              "sense": 4,
+              "pos": "v",
+              "definition": "to prepare for a sports event by practising",
+              "example": "She trains at the pool for two hours a day."
+            }
+          ],
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "2"
+            },
+            {
+              "id": "C",
+              "text": "3"
+            },
+            {
+              "id": "D",
+              "text": "4"
+            }
+          ],
+          "accepted": [
+            "C"
+          ],
+          "hints": {
+            "first_error": "先判斷廣告裏的 train 是名詞還是動詞，再看它在句中的意思。We will train you… 是誰對誰做這件事？不要一看到 train 就選「火車」，也不要因為這與運動有關就立刻選「為比賽練習」。"
+          },
+          "feedback": {
+            "correct": "Yes. In ‘We will train you’, train is a verb meaning to teach someone the skills for the job (sense 3).",
+            "incorrect_after_retry": "The answer is C, sense 3. The company will teach the new cycling guide. Sense 1 (a railway train) is the wrong part of speech and the wrong meaning. Sense 2 is also a noun. Sense 4 is a verb, but it means to practise for a sports event yourself, not to teach a new helper the job."
+          },
+          "explanation": "Dictionary item: the correct sense must match both part of speech and meaning in context. Classic traps are the familiar noun (railway) and a same-POS sports meaning that does not fit ‘We will train you’."
+        },
+        {
+          "id": "S2-Q04",
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。只須根據文字作答，不必看圖。",
+          "stem": "Which is a suitable job for Chris?",
+          "profile_text": "Hi, I’m Chris. I love being outdoors and I cycle to the harbour most weekends. I am cheerful and I enjoy showing new routes to my friends.",
+          "profile_note": "A speech-bubble drawing may be used in the layout, but the question is answerable from this text alone.",
+          "options": [
+            {
+              "id": "A",
+              "text": "Storytime helper at Harbour Children’s Library"
+            },
+            {
+              "id": "B",
+              "text": "Weekend Cycling Guide for Green Wheel Tours"
+            },
+            {
+              "id": "C",
+              "text": "Music class assistant at Melody Studio"
+            },
+            {
+              "id": "D",
+              "text": "Games helper at East Park Sports Centre"
+            }
+          ],
+          "accepted": [
+            "B"
+          ],
+          "hints": {
+            "first_error": "把 Chris 說的每一點（outdoors、cycle、weekends、cheerful、showing new routes）逐一對照四則廣告，找出最吻合的一份工作。"
+          },
+          "feedback": {
+            "correct": "Yes. Green Wheel Tours needs someone cheerful who loves the outdoors and can ride a bicycle; the job is on Saturdays and Sundays. Chris already cycles at weekends and enjoys showing new routes.",
+            "incorrect_after_retry": "The answer is B. Chris does not mention English, stories, or young children (A), or music or performing (C). D is only a few hours a month on Sundays and is about children’s games, which Chris does not mention. The cycling ad matches the outdoors, cycling, weekends, cheerfulness, and showing routes."
+          },
+          "explanation": "Match a short textual self-introduction to the most suitable advertisement. No picture is required."
+        },
+        {
+          "id": "S2-Q05",
+          "type": "mcq_single",
+          "marks": 1,
+          "direction_zh": "選出最合適的答案。",
+          "stem": "According to the advertisements, which one of the following is true?",
+          "options": [
+            {
+              "id": "A",
+              "text": "To be a storytime helper, you need to be between 4 and 8 years old."
+            },
+            {
+              "id": "B",
+              "text": "To be a games helper, you need to be a sports champion."
+            },
+            {
+              "id": "C",
+              "text": "To be a cycling guide, you need to be musical."
+            },
+            {
+              "id": "D",
+              "text": "To be a music class assistant, you need to be brave and patient."
+            }
+          ],
+          "accepted": [
+            "D"
+          ],
+          "hints": {
+            "first_error": "留意誰的年齡被提及：是服務對象，還是應徵者？也要找出廣告寫明 There is no need… 的句子，以及完全沒有出現的特質。正確的一項必須兩方面都有根據。"
+          },
+          "feedback": {
+            "correct": "Yes. The music class assistant must be patient and must not be afraid of standing in front of a small group, so brave and patient is fairly supported.",
+            "incorrect_after_retry": "The answer is D (lines 22–25): patient is stated, and ‘not afraid of standing in front of a small group’ fairly supports brave. A confuses the age of the children at storytime (4 to 8) with the applicant. B is the opposite of the games ad, which says there is no need to be a sports champion. C names a quality that the cycling ad never mentions."
+          },
+          "explanation": "Which statement is true? Traps: audience age mixed up with the applicant; a duty / quality the ad says is not needed; a quality not mentioned."
+        },
+        {
+          "id": "S2-Q06",
+          "type": "gap_note_group",
+          "marks": 0,
+          "teacher_review": false,
+          "original_item": true,
+          "original_item_reason": "The source Question 6 page was not supplied. This is a new, exam-typical completion task, not a reconstruction of the missing item.",
+          "direction_en": "Ryan wants to apply for one of the jobs. Finish his message using words from the advertisements. Use ONE word for each blank.",
+          "direction_zh": "Ryan 想申請其中一份工作。利用廣告中的詞語完成他的留言。每個空格只填一個單詞。",
+          "note_full": "Hello,\nI would like to apply for the Weekend Cycling (1) ________ job at Green Wheel Tours.\nI love the (2) ________ and I can work on Saturdays and (3) ________.\nPlease (4) ________ me at the address below.\nRyan",
+          "label_for_site_and_paper": "This Question 6 is an original completion item. The source exam told pupils to complete Question 6 on the next page, but that page was not supplied. Do not treat this item as a reconstruction of the missing source question.",
+          "blanks": [
+            {
+              "id": "S2-Q06a",
+              "blank_number": 1,
+              "accepted": [
+                "Guide",
+                "guide"
+              ],
+              "acceptable_notes": "Case-insensitive. The title word is Guide.",
+              "hints": {
+                "first_error": "第 (1) 格在 Weekend Cycling 後面，是這份工作名稱的最後一個詞。請回看右上角的廣告標題。"
+              },
+              "feedback": {
+                "correct": "Yes. The job is Weekend Cycling Guide.",
+                "incorrect_after_retry": "The word is Guide (lines 12–13)."
+              }
+            },
+            {
+              "id": "S2-Q06b",
+              "blank_number": 2,
+              "accepted": [
+                "outdoors"
+              ],
+              "acceptable_notes": "Case-insensitive. Do not accept 'outside' or 'nature'; the advertisement says outdoors.",
+              "hints": {
+                "first_error": "第 (2) 格在 I love the 後面。Green Wheel Tours 的廣告要求你 love the ______。"
+              },
+              "feedback": {
+                "correct": "Yes. The advertisement says you will need to love the outdoors.",
+                "incorrect_after_retry": "The word is outdoors (line 15)."
+              }
+            },
+            {
+              "id": "S2-Q06c",
+              "blank_number": 3,
+              "accepted": [
+                "Sundays"
+              ],
+              "acceptable_notes": "The gap follows ‘Saturdays and’, so only the plural Sundays matches the advertisement and the grammar of the sentence. Do not accept Sunday.",
+              "hints": {
+                "first_error": "第 (3) 格在 Saturdays and 後面。廣告說明獲聘後會在哪兩天工作。注意單複數。"
+              },
+              "feedback": {
+                "correct": "Yes. The job is on Saturdays and Sundays.",
+                "incorrect_after_retry": "The word is Sundays (line 16). Sunday does not fit after Saturdays and."
+              }
+            },
+            {
+              "id": "S2-Q06d",
+              "blank_number": 4,
+              "accepted": [
+                "e-mail",
+                "email",
+                "E-mail",
+                "Email"
+              ],
+              "preferred": "e-mail",
+              "acceptable_notes": "Case-insensitive. Accept the hyphenated form used in the advertisements (e-mail) and the closed form email. Do not accept write, call, telephone, or contact, which are not the verb used in ‘e-mail us’ and do not fit ‘________ me at the address below’ as tightly.",
+              "hints": {
+                "first_error": "第 (4) 格在 Please 後面，是一個動詞。廣告和頁尾怎樣請有興趣的人聯絡他們？後面是 me at the address below，所以這個動詞要配合「地址」。"
+              },
+              "feedback": {
+                "correct": "Yes. The advertisements and the footer use e-mail as the way to write to them.",
+                "incorrect_after_retry": "The word is e-mail (line 14: e-mail us; also line 34). The form email is also accepted. Call / telephone would not fit ‘at the address below’."
+              }
+            }
+          ],
+          "explanation": "Original auto-markable completion (four one-word gaps) using words from the ads and footer. Not a reconstruction of the missing source Q6.",
+          "scored": false,
+          "role": "display_group",
+          "note": "Layout wrapper only. Scored items are S2-Q06a–d (1 mark each)."
+        },
+        {
+          "id": "S2-Q06a",
+          "section": "Q6",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "S2-Q06",
+          "blank_number": 1,
+          "original_item": true,
+          "teacher_review": false,
+          "direction_en": "Ryan wants to apply for one of the jobs. Finish his message using words from the advertisements. Use ONE word for each blank.",
+          "accepted": [
+            "Guide",
+            "guide"
+          ],
+          "acceptable_notes": "Case-insensitive. The title word is Guide.",
+          "hints": {
+            "first_error": "第 (1) 格在 Weekend Cycling 後面，是這份工作名稱的最後一個詞。請回看右上角的廣告標題。"
+          },
+          "feedback": {
+            "correct": "Yes. The job is Weekend Cycling Guide.",
+            "incorrect_after_retry": "The word is Guide (lines 12–13)."
+          }
+        },
+        {
+          "id": "S2-Q06b",
+          "section": "Q6",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "S2-Q06",
+          "blank_number": 2,
+          "original_item": true,
+          "teacher_review": false,
+          "direction_en": "Ryan wants to apply for one of the jobs. Finish his message using words from the advertisements. Use ONE word for each blank.",
+          "accepted": [
+            "outdoors"
+          ],
+          "acceptable_notes": "Case-insensitive. Do not accept 'outside' or 'nature'; the advertisement says outdoors.",
+          "hints": {
+            "first_error": "第 (2) 格在 I love the 後面。Green Wheel Tours 的廣告要求你 love the ______。"
+          },
+          "feedback": {
+            "correct": "Yes. The advertisement says you will need to love the outdoors.",
+            "incorrect_after_retry": "The word is outdoors (line 15)."
+          }
+        },
+        {
+          "id": "S2-Q06c",
+          "section": "Q6",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "S2-Q06",
+          "blank_number": 3,
+          "original_item": true,
+          "teacher_review": false,
+          "direction_en": "Ryan wants to apply for one of the jobs. Finish his message using words from the advertisements. Use ONE word for each blank.",
+          "accepted": [
+            "Sundays"
+          ],
+          "acceptable_notes": "The gap follows ‘Saturdays and’, so only the plural Sundays matches the advertisement and the grammar of the sentence. Do not accept Sunday.",
+          "hints": {
+            "first_error": "第 (3) 格在 Saturdays and 後面。廣告說明獲聘後會在哪兩天工作。注意單複數。"
+          },
+          "feedback": {
+            "correct": "Yes. The job is on Saturdays and Sundays.",
+            "incorrect_after_retry": "The word is Sundays (line 16). Sunday does not fit after Saturdays and."
+          }
+        },
+        {
+          "id": "S2-Q06d",
+          "section": "Q6",
+          "type": "one_word_gap",
+          "marks": 1,
+          "part_of_note": "S2-Q06",
+          "blank_number": 4,
+          "original_item": true,
+          "teacher_review": false,
+          "direction_en": "Ryan wants to apply for one of the jobs. Finish his message using words from the advertisements. Use ONE word for each blank.",
+          "accepted": [
+            "e-mail",
+            "email",
+            "E-mail",
+            "Email"
+          ],
+          "acceptable_notes": "Case-insensitive. Accept the hyphenated form used in the advertisements (e-mail) and the closed form email. Do not accept write, call, telephone, or contact, which are not the verb used in ‘e-mail us’ and do not fit ‘________ me at the address below’ as tightly.",
+          "hints": {
+            "first_error": "第 (4) 格在 Please 後面，是一個動詞。廣告和頁尾怎樣請有興趣的人聯絡他們？後面是 me at the address below，所以這個動詞要配合「地址」。"
+          },
+          "feedback": {
+            "correct": "Yes. The advertisements and the footer use e-mail as the way to write to them.",
+            "incorrect_after_retry": "The word is e-mail (line 14: e-mail us; also line 34). The form email is also accepted. Call / telephone would not fit ‘at the address below’."
+          }
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "repo_name_intended": "P6A_Comprehenion_Exam",
+    "do_not_correct_spelling": true,
+    "set1_topic": "Jobs in the Community: Leisure Centre Lifeguard (information webpage)",
+    "set2_topic": "Harbour Lights Job Fair — Storytime Helper, Weekend Cycling Guide, Music Class Assistant at Melody Studio, Games Helper",
+    "set1_scored_item_ids": [
+      "S1-H01",
+      "S1-Q01",
+      "S1-Q02",
+      "S1-Q03",
+      "S1-Q04",
+      "S1-Q05",
+      "S1-Q06a",
+      "S1-Q06b",
+      "S1-Q06c"
+    ],
+    "set2_scored_item_ids": [
+      "S2-Q01",
+      "S2-Q02",
+      "S2-Q03",
+      "S2-Q04",
+      "S2-Q05",
+      "S2-Q06a",
+      "S2-Q06b",
+      "S2-Q06c",
+      "S2-Q06d"
+    ],
+    "set1_item_count": 9,
+    "set2_item_count": 9,
+    "total_scored_items": 18
+  }
+}
