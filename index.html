@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P6A Reading Comprehension Practice</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#passage">跳至文章</a>
+    <a class="skip" href="#questions">跳至題目</a>
+    <header class="topbar">
+      <div class="topbar-text">
+        <p class="eyebrow" id="pack-title-zh">小六閱讀理解練習（兩組）</p>
+        <h1 id="pack-title">P6A Reading Comprehension Practice</h1>
+      </div>
+      <div class="topbar-actions">
+        <p id="score" data-earned="0" data-total="9" data-done="0" data-station="set1" data-scored-count="9">第一組得分 0 / 9</p>
+        <button type="button" id="reset-btn" data-action="reset">重新開始</button>
+      </div>
+      <p id="live" class="visually-hidden" aria-live="polite"></p>
+    </header>
+    <p id="session-note">本頁有兩組練習，請先完成第一組。你可以先檢視第一組，再按「繼續第二組」。分數只留在這次開啟的頁面內，重新開始或重新載入後便會清除。</p>
+    <main class="workspace" id="workspace" data-station="set1">
+      <section class="passage-pane" id="passage" aria-label="閱讀文章">
+        <p class="loading">正在載入文章。</p>
+      </section>
+      <section class="question-pane" id="questions" aria-label="題目">
+        <p class="loading">正在載入題目。</p>
+      </section>
+    </main>
+    <noscript><p class="feedback is-incorrect">請啟用 JavaScript 以使用本練習。</p></noscript>
+    <script src="js/marking.js"></script>
+    <script src="js/passages.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
